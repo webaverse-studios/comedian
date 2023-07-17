@@ -1,0 +1,31 @@
+{
+  "name": "comedian",
+  "title": "Comedian",
+  "description": "Gives the companion the ability make jokes, memes, silly words, or animated gifs",
+  "authors": [
+    {
+      "name": "Webaverse",
+      "email": "support@webaverse.com",
+      "url": "https://www.moemate.io"
+    },
+    {
+      "name": "{YOUR NAME HERE!}"
+    }
+  ],
+  "version": "1.0",
+  "compatibility": {
+    "minimum": "0.9.1",
+    "verified": "0.9.1"
+  },
+  "download": "https://github.com/webaverse-studios/comedian/archive/refs/tags/v1.0.zip",
+  "models": [
+    "models/humor_api.json.hbs"
+  ],
+  "skills": [
+    "skills/joke.json.hbs",
+    "skills/meme.json.hbs"
+  ],
+  "scripts": [
+    "scripts/comedian.js"
+  ]
+}
