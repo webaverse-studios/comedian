@@ -17,7 +17,7 @@
     "minimum": "0.9.3",
     "verified": "0.9.3"
   },
-  "download": "https://github.com/webaverse-studios/comedian/archive/refs/tags/v1.0.zip",
+  "download": "https://github.com/webaverse-studios/comedian/releases/download/v1.0.1/comedian-v1.0.1.zip",
   "models": [
     "models/humor_api.json.hbs"
   ],
