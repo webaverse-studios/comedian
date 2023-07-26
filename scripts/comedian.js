@@ -3,14 +3,15 @@
  * Gives the companion the ability make jokes, memes, silly words, or animated gifs
  */
 
-function _handleJokeSkill(keywords) {
+async function _handleJokeSkill(keywords) {
     const context = {
         humorApiFunction:'jokes/random',
         humorApiQueryString: `exclude-tags=nsfw,dark,racist,jewish,sexual&include-tags=${keywords.value}`
     }
-    window.models_generic.SetCurrentModel('comedian:humorapi')
-    window.models_generic.ApplyContextObject(context);
-    window.models_generic.CallCurrentModel();
+    const model = window.models.CreateModel('comedian:humorapi')
+    window.models.ApplyContextObject(model, context);
+    await window.models.CallModel(model);
+    window.models.DestroyModel(model);
 }
 
 function _handleMemeSkill(keywords) {
@@ -18,9 +19,10 @@ function _handleMemeSkill(keywords) {
         humorApiFunction:'memes/random',
         humorApiQueryString: `media-type=image&keywords=${keywords.value}`
     }
-    window.models_generic.SetCurrentModel('comedian:humorapi')
-    window.models_generic.ApplyContextObject(context);
-    window.models_generic.CallCurrentModel();
+    const model = window.models.CreateModel('comedian:humorapi')
+    window.models.ApplyContextObject(model, context);
+    window.models.CallModel(model);
+    window.models.DestroyModel(model);
 }
 
 function _handleApiResponse(response) {

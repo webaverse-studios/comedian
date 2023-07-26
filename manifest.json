@@ -12,10 +12,10 @@
       "name": "{YOUR NAME HERE!}"
     }
   ],
-  "version": "1.0",
+  "version": "1.0.1",
   "compatibility": {
-    "minimum": "0.9.1",
-    "verified": "0.9.1"
+    "minimum": "0.9.3",
+    "verified": "0.9.3"
   },
   "download": "https://github.com/webaverse-studios/comedian/archive/refs/tags/v1.0.zip",
   "models": [
